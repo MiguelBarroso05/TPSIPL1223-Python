@@ -48,3 +48,18 @@ print(metros())
 
 
 def area_circulo():
+    raio = float(input("digite o raio do circulo: "))
+    area_circ = (raio ** 2) * 3.14
+    return f"A area do circulo é: {area_circ}"
+
+
+print(area_circulo())
+
+
+def area_quadrado():
+    lado = float(input("indique a medida da aresta:"))
+    area2 = (lado ** 2) * 2
+    return f"O dobro da area do quadrado é : {area2}"
+
+
+print(area_quadrado())
