@@ -58,8 +58,60 @@ print(area_circulo())
 
 def area_quadrado():
     lado = float(input("indique a medida da aresta:"))
+    area =  lado ** 2
     area2 = (lado ** 2) * 2
-    return f"O dobro da area do quadrado é : {area2}"
+    return f"A area do quadrado é {area} \n"  f"O dobro da area do quadrado é : {area2}"
 
 
 print(area_quadrado())
+
+
+def salario():
+    dinheiro_hora = float(input("introduza o valor/hora: "))
+    horas_trabalhadas = float(input("introduza as horas trabalhadas no mês: "))
+    salary = dinheiro_hora * horas_trabalhadas
+    return f"O seu salario mensal é: {salary}"
+
+
+print(salario())
+
+def temperatura():
+    temp_f = float(input("introduza a temp em Fahrenheit: "))
+    temp_c = 5 * ((temp_f - 32) / 9)
+    return f"A temperatura em Celsius é: {temp_c}"
+
+
+print(temperatura())
+
+
+def temperatura2():
+    temp_c2 = float(input("introduza a temp em Celsius: "))
+    temp_f2 =((temp_c2 * 9) + 32) / 5
+    return f"A temp em Fahrenheit é: {temp_f2}"
+
+
+print(temperatura2())
+
+
+def tnumeros():
+    nmr1 = float(input("introduza um numero real: "))
+    nmr2 = float(input("introduza outro numero real: "))
+    nmr3 = int(input("introduza um numero inteiro: "))
+    conta1 = (2 * nmr1) * (nmr2 * 0.5)
+    conta2 = (3 * nmr1) + nmr3
+    conta3 = nmr3 ** 3
+    return conta1, conta2, conta3
+
+
+print(tnumeros())
+
+
+def peso_ideal():
+    alt = float(input("introduza a sua altura(m): "))
+    peso = (72.7 * alt) -58
+    return f"O seu peso ideal é: {peso}"
+
+
+print(peso_ideal())
+
+
