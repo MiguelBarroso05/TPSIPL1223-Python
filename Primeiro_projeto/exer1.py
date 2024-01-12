@@ -115,3 +115,60 @@ def peso_ideal():
 print(peso_ideal())
 
 
+def peso_man_woman():
+    alt = float(input("introduza a sua altura(m): "))
+    sex = input("introduza a seu sexo (h/m): ")
+    if sex == "h":
+        peso = (72.7 * alt) - 58
+    elif sex == "m":
+        peso = (62.1 * alt) - 44.7
+    else:
+      return "sexo invalido"
+    return peso
+
+
+print(peso_man_woman())
+
+
+def joao_pescador():
+    peso_peixe = float(input("Indique em quilos o peso do peixe:"))
+    peso_excesso = peso_peixe - 50
+    if peso_excesso < 0:
+        peso_excesso = 0
+
+    round(peso_excesso, 0)
+    multa = 4 * peso_excesso
+    return (f"O peso do peixe foi de {peso_peixe}kg\n"
+            f"A quantidade foi excedida em {peso_excesso}kg\n"
+            f"O valor da sua multa é de {multa}€")
+
+
+print(joao_pescador())
+
+
+def salario_mensal():
+    money_hour = float(input("introduza o preço/hora: "))
+    hours_worked = float(input("introduza o nº de horas trabalhadas no mês: "))
+    salario_bruto = money_hour * hours_worked
+    ir = salario_bruto * 0.11
+    inss = salario_bruto * 0.08
+    sindicato = salario_bruto * 0.05
+    salario_liquido = salario_bruto - ir - inss - sindicato
+    return f"+ Salário Bruto : {salario_bruto}€\n- IR (11%) : {ir}€\n- INSS (8%) : {inss}€\n- Sindicato ( 5%) : {sindicato}€\n= Salário Liquido : {salario_liquido}€"
+
+
+print(salario_mensal())
+
+import math
+def tintas():
+    metros_pintura = float(input("introduza os metros^2 que deseja printar: "))
+    litros_area = metros_pintura / 3
+    latas = litros_area /18
+    galoes = litros_area/ 3.6
+    math.ceil(latas)
+    price_latas = latas * 80
+    price_galoes = galoes * 25
+    price_mix =
+
+
+
