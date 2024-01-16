@@ -1,15 +1,7 @@
-from datetime import datetime
+from Class_exmpl import Pessoa
 
-minf = datetime.now().time().minute +1
+p1 = Pessoa("Joao", 52, "Masc")
 
-c = 0
-while True:
-    print(datetime.now().time().second)
-
-    if datetime.now().time().second == 59:
-        c += 1
-
-    if datetime.now().time().minute >= minf:
-        break
-
-print(c)
+print(p1.nome)
+p1.nome = "Márcio"
+print(p1)
