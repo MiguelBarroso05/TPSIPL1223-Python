@@ -168,7 +168,8 @@ def tintas():
     math.ceil(latas)
     price_latas = latas * 80
     price_galoes = galoes * 25
-    price_mix =
+    price_mix = "a"
+    pass
 
 
 
