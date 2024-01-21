@@ -1,4 +1,4 @@
-def nmrmaior():
+def f1():
     nmr1 = float(input("Introduza um numero:"))
     nmr2 = float(input("Introduza outro numero:"))
     if nmr1 > nmr2:
@@ -9,10 +9,8 @@ def nmrmaior():
         return f"o nmr maior é {nmr2}"
 
 
-print(nmrmaior())
 
-
-def positivo_negativo():
+def f2():
     nmr1 = float(input("Introduza um numero:"))
     if nmr1 >= 0:
         return f"o nmr é positivo"
@@ -20,10 +18,9 @@ def positivo_negativo():
         return f"o nmr é negativo"
 
 
-print(positivo_negativo())
 
 
-def sex_verification():
+def f3():
     sex = input("Introduza o seu sexo (F/M):")
     if sex == "F":
         return "Feminino"
@@ -33,10 +30,9 @@ def sex_verification():
         return "Sexo Invalido"
 
 
-print(sex_verification())
 
 
-def volgal_consoante():
+def f4():
     vowel = ["a", "e", "i", "o", "u"]
     letter = input("Introduza uma letra:")
     if letter in vowel:
@@ -45,10 +41,9 @@ def volgal_consoante():
         return "A letra é uma consoante"
 
 
-print(volgal_consoante())
 
 
-def aproved_or_not():
+def f5():
     note1 = float(input("Introduza a primeira nota:"))
     note2 = float(input("Introduza a segunda nota:"))
     average = (note1 + note2) / 2
@@ -56,31 +51,60 @@ def aproved_or_not():
         return "Aprovado"
     elif average == 10:
         return "Aprovado top"
-
     else:
         return "Reprovado"
 
 
-print(aproved_or_not())
 
-
-def three_numbers_max():
+def f6():
     nmr1 = float(input("Introduza um 1º número:"))
     nmr2 = float(input("Introduza um 2º nmr:"))
     nmr3 = float(input("Introduza um 3º nmr:"))
-    list = [nmr1, nmr2, nmr3]
-    return max(list)
+    lista = [nmr1, nmr2, nmr3]
+    return max(lista)
 
 
-print(three_numbers_max())
-
-
-def min_three_number():
+def f7():
     nmr1 = float(input("Introduza um 1º número:"))
     nmr2 = float(input("Introduza um 2º nmr:"))
     nmr3 = float(input("Introduza um 3º nmr:"))
-    list = [nmr1, nmr2, nmr3]
-    return f"O maior nmr é {max(list)} e o menor é {min(list)}"
+    lista = [nmr1, nmr2, nmr3]
+    return f"O maior nmr é {max(lista)} e o menor é {min(lista)}"
 
 
-print(min_three_number())
+
+def f8():
+    prdt1 = float(input("Introduza o Preço do Produto 1:"))
+    prdt2 = float(input("Introduza o Preço do Produto 2:"))
+    prdt3 = float(input("Introduza o Preço do Produto 3:"))
+    if prdt1 > prdt2:
+        prdt1 = prdt2
+    elif prdt1 > prdt3:
+        prdt1 = prdt3
+    return f"O produto aconselhado a comprar é o prdt com o preço de {prdt1}"
+
+
+def f9():
+    nmr1 = float(input("Introduza um 1º número:"))
+    nmr2 = float(input("Introduza um 2º nmr:"))
+    nmr3 = float(input("Introduza um 3º nmr:"))
+    ordem =[nmr1, nmr2, nmr3]
+    return sorted(ordem)
+
+
+def f10():
+    turno = str(input("Em que turno trabalha? "))
+    if (turno == "M"):
+        return "Bom dia!"
+    elif (turno == "T"):
+        return "Boa tarde!"
+    elif (turno == "N"):
+        return "Boa noite!"
+    else:
+        return "Valor Invalido"
+
+
+
+
+
+

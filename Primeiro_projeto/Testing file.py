@@ -1,10 +1,16 @@
-
-def min_three_number():
-    nmr1 = float(input("Introduza um 1º número:"))
-    nmr2 = float(input("Introduza um 2º nmr:"))
-    nmr3 = float(input("Introduza um 3º nmr:"))
-    list = [nmr1, nmr2, nmr3]
-    return f"O maior nmr é {max(list)} e o menor é {min(list)}"
+import exer1 as e1
+import exer2 as e2
 
 
-print(min_three_number())
+def escolha():
+    pagina = input("Escolha a pag. de exercicios!: ")
+    exer = input("Escolha o exer!: ")
+    show = pagina.exer()
+    if pagina == 1:
+        pagina = e1
+        print(show)
+    else:
+        pass
+
+
+print(escolha())

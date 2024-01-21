@@ -1,4 +1,4 @@
-import utils as utl #boa opçao para biblotecas externas pq obriga nomenclatura
+import utils as utl  # boa opçao para biblotecas externas pq obriga nomenclatura
 utl.ola_mundo()
 
 
