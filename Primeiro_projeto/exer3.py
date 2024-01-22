@@ -42,3 +42,18 @@ def f4():
     else:
         return "Nenhuma consoante encontrada."
 
+
+def f5():
+    vetor = []
+    print("Introduza 20 números inteiros: ")
+    for i in range(20):
+        x = int(input())
+        vetor.append(x)
+    if len(vetor) == 20:
+        pass
+    else:
+        print("Erro: O vetor deve ter exatamente 10 caracteres.")
+
+    par = [c for c in vetor if (c % 2) == 0]
+    impar = [c for c in vetor if (c % 2) != 0]
+    return f"{impar}\n{par}"
