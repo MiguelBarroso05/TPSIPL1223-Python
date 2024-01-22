@@ -104,6 +104,41 @@ def f10():
         return "Valor Invalido"
 
 
+def f11():
+    salary = float(input("Indique o seu salario: "))
+    if salary <= 280:
+        salary_raise = 1.2
+        salary_new = salary * salary_raise
+        raise_amount = salary_new - salary
+        salary_raise = (salary_raise - 1) * 100
+    elif 280 < salary <= 700:
+        salary_raise = 1.15
+        salary_new = salary * salary_raise
+        raise_amount = salary_new - salary
+        salary_raise = (salary_raise - 1) * 100
+    elif 700 < salary <= 1500:
+        salary_raise = 1.1
+        salary_new = salary * salary_raise
+        raise_amount = salary_new - salary
+        salary_raise = (salary_raise - 1) * 100
+    elif salary > 1500:
+        salary_raise = 1.05
+        salary_new = salary * salary_raise
+        raise_amount = salary_new - salary
+        salary_raise = (salary_raise - 1) * 100
+    elif salary < 0:
+        print("Introduza um valor valido!")
+    return (f"O seu salario atual é {salary}€ que vai receber um aumento {salary_raise.__ceil__()}%"
+            f" num valor de {raise_amount.__ceil__()}€ com um valor final de {salary_new.__ceil__()}€")
+
+
+def f12():
+    hours_worked = float(input("Indique o número de horas trabalhadas no ultimo mês: "))
+    hours_pay = float(input("Indique o valor/hora que recebe: "))
+    gross_salary = hours_pay * hours_worked
+    pass
+
+
 
 
 
