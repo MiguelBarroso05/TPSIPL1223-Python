@@ -1,5 +1,4 @@
-import exer1 as e1
-import exer2 as e2
+from Exercicios import exer1 as e1
 
 
 def escolha():

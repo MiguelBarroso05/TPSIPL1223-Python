@@ -1,5 +1,6 @@
 import importlib.util
 
+
 def executar_funcao(arquivo, nome_funcao):
     try:
         # Importar o módulo dinamicamente
@@ -23,6 +24,7 @@ def executar_funcao(arquivo, nome_funcao):
     except Exception as e:
         print(f"Erro durante a execução: {e}")
 
+
 def main():
     # Solicitar ao usuário o caminho do arquivo Python
     nome_arquivo = input("Digite o caminho do arquivo Python (.py): ")
@@ -32,6 +34,7 @@ def main():
     nome_funcao = "f"+nome_funcao
     # Executar a função com o arquivo e o nome da função fornecidos
     executar_funcao(nome_arquivo, nome_funcao)
+
 
 if __name__ == "__main__":
     main()
