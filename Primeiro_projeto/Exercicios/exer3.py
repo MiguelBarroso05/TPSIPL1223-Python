@@ -40,10 +40,10 @@ def f4():
 
 def f5():
     pais_a = float(input("Insira a populaçao do primeiro pais: "))
-    pais_b = float(input("Insira a populaçao do segundo pais: "))
     taxa_a = float(input("Insira a taxa de crescimento do primeiro pais (em %): "))
-    taxa_a = taxa_a/100 + 1
+    pais_b = float(input("Insira a populaçao do segundo pais: "))
     taxa_b = float(input("Insira a taxa de crescimento do segundo pais (em %): "))
+    taxa_a = taxa_a/100 + 1
     taxa_b = taxa_b / 100 + 1
     n = 0
     while pais_a <= pais_b:
